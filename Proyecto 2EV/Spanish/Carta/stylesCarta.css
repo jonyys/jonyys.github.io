@@ -1,0 +1,120 @@
+/* Estilos generales del cuerpo */
+body {
+    background-image: url("../Carta/img/bg.jpg"); /* Establece la imagen de fondo */
+    margin: 0; /* Elimina el margen predeterminado */
+    font-family: 'Raleway'; /* Establece la fuente */
+    font-size: 18px; /* Tamaño de fuente base */
+    line-height: 1.3em; /* Espaciado entre líneas */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+}
+
+/* Envoltura de contenido */
+.wrapper {
+    display: flex; /* Utiliza un contenedor flexible */
+    height: 100vh;
+}
+
+/* Estilos para la bandera */
+.flag {
+    padding: 1em; /* Añade relleno */
+    position: fixed; /* Posición fija */
+    right: 20px; /* Alinea a la derecha */
+}
+   
+/* Estilos para el botón de inicio */
+.home {
+    padding: 1em; /* Añade relleno */
+    position: fixed; /* Posición fija */
+    left: 25px; /* Alinea a la izquierda */
+}
+
+/* Estilos para la información personal */
+.personal-info {
+    width: 350px; /* Ancho del contenedor */
+    padding: 20px; /* Añade relleno */
+    background-color: #333333e0; /* Color de fondo con transparencia */
+    color: #fff; /* Color del texto */
+    border-radius: 10px; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para la imagen personal */
+.personal-info img {
+    width: 250px; /* Ancho de la imagen */
+    border-radius: 50%; /* Borde redondeado */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para el título en la información personal */
+.personal-info h2 {
+    margin: 5px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para los párrafos en la información personal */
+.personal-info p {
+    margin: 5px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para los enlaces en la información personal */
+.personal-info a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilos para los enlaces al pasar el mouse en la información personal */
+.personal-info a:hover {
+    opacity: 0.7; /* Reducción de la opacidad */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px; /* Añade relleno */
+    background-color: rgba(150, 148, 148, 0.849); /* Color de fondo con transparencia */
+    border-radius: 20px; /* Borde redondeado */
+    min-height: 500px; /* Altura mínima */
+    display: flex; /* Utiliza un contenedor flexible */
+    flex-direction: column; /* Dirección de apilamiento */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Añade relleno */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0); /* Sombra */
+}
+
+/* Estilos para el título en el encabezado */
+header h1 {
+    margin: 0; /* Elimina el margen */
+    font-size: 36px; /* Tamaño de fuente */
+    text-align: center; /* Alineación del texto */
+    color: inherit; /* Hereda el color del texto */
+}
+
+/* Estilos para la introducción */
+.intro {
+    background-color: rgba(255, 255, 255, 0.89); /* Color de fondo con transparencia */
+    padding: 20px; /* Añade relleno */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0); /* Sombra */
+}
+
+/* Estilos para el título en la introducción */
+.intro h2 {
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para los párrafos en la introducción */
+.intro p {
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 15px; /* Margen inferior */
+    text-align: center; /* Alineación del texto */
+}
