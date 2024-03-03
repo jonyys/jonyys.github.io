@@ -1,4 +1,4 @@
-/* ------------------------- Styleguide Â® Code by Dennis -------------------------------------------------- */
+
 
 /* ------------------------- Fonts -------------------------------------------------- */
 
@@ -1351,6 +1351,3 @@ select:-webkit-autofill:focus {
    transition: background-color 5000s ease-in-out 0s;
 }
 
-input[type=radio] {
-   -webkit-appearance: none;
-}

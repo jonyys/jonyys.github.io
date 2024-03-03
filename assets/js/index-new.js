@@ -1084,7 +1084,7 @@ function initTimeZone() {
     // month: 'numeric',
     // day: 'numeric',
     hour: '2-digit',
-    hour24: 'true',
+    hour12: 'true',
     minute: 'numeric',
     // second: 'numeric',
   };
@@ -1382,7 +1382,31 @@ function initScrolltriggerAnimations() {
     
     }, // End Desktop Only Scrolltrigger
   
-   
+    // Mobile Only Scrolltrigger
+    "(max-width: 720px)": function() {
+    
+      if(document.querySelector(".footer-wrap")) {
+      // Scrolltrigger Animation : Footer
+      $(".footer-wrap").each(function (index) {
+        let triggerElement = $(this);
+        let targetElementRound = $(".footer-rounded-div .rounded-div-wrap");
+      
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: triggerElement,
+            start: "0% 100%",
+            end: "100% 100%",
+            scrub: 0
+          }
+        });
+        tl.to(targetElementRound, {
+          height: 0,
+          ease: "none"
+        }, 0);
+      });
+    }
+    
+    } // End Mobile Only Scrolltrigger
   
   }); // End GSAP Matchmedia
 
