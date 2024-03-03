@@ -1866,9 +1866,9 @@ main.touch .main-wrap {
 }
 
 @keyframes digitalball {
-   0%   {background: var(--color-blue);}
-   50%   {background: #ff4444;}
-   100% {background: var(--color-blue);}
+   0%   {background: var(--color-#626c6e);}
+   50%   {background: blue;}
+   100% {background: var(--color-#626c6e);}
 }
 
 .digital-ball {
@@ -1881,7 +1881,7 @@ main.touch .main-wrap {
    transform: translate(-50%, -50%);
    position: absolute;
    overflow: hidden;
-   background: var(--color-blue);
+   background: var(--color-#626c6e);
 }
 
 .digital-ball .overlay {
@@ -1992,6 +1992,12 @@ main.touch .main-wrap {
       transform: translate(-20%, -50%);
    }
 
+}
+
+.centered-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 /* ------------------------- About - Image -------------------------------------------------- */
