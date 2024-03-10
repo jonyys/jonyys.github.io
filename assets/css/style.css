@@ -1,5 +1,4 @@
 
-
 main {
    box-sizing: border-box;
    overflow: hidden;
@@ -1113,260 +1112,6 @@ main.touch .main-wrap {
       display: none;
    }
 }
-/* ------------------------- Work Grid - Small -------------------------------------------------- */
-
-.small-work-grid {
-   padding-top: 0;
-   padding-bottom: 0;
-}
-
-.small-work-grid .row {
-   padding: 2em 0 2em 0;
-}
-
-.small-work-grid .work-items li {
-   max-height: 0;
-   overflow: hidden;
-}
-
-.small-work-grid .work-items li.visible {
-   max-height: calc(clamp(1.75em, 2.3vw, 2.5em) + 4.4em);
-}
-
-.small-work-grid .work-items {
-   padding-bottom: calc(var(--section-padding) * .5);
-}
-
-@media screen and (max-width: 1024px) {
-   .small-work-grid {
-      display: none;
-   }
-}
-
-/* ------------------------- Work Grid - Tiny -------------------------------------------------- */
-
-.tiny-work-grid {
-   padding-top: 0;
-   padding-bottom: 0;
-}
-
-.tiny-work-grid .row {
-   padding: 2em 0 2em 0;
-}
-
-.tiny-work-grid .work-items {
-   padding-bottom: calc(var(--section-padding) * .75);
-}
-
-.tiny-work-grid .arrow {
-   position: absolute;
-   right: var(--container-padding);
-   transform: translateY(.2em);
-   background: var(--color-dark);
-   width: 2em;
-   height: 2em;
-   border-radius: 50%;
-   display: none;
-   align-content: center;
-   justify-content: center;
-}
-
-.tiny-work-grid .arrow svg {
-   width: 35%;
-   transform: rotate(-90deg);
-}
-
-@media screen and (max-width: 1000px) {
-
-   .archive-header h1 .count-nr {
-      font-size: .45em;
-   }
-
-   .tiny-work-grid .container {
-      padding: 0;
-   }
-
-   .tiny-work-grid .work-items a:hover {
-      opacity: 1;
-   }
-
-   .tiny-work-grid .arrow {
-      display: flex;
-   }
-
-   .tiny-work-grid .row {
-      align-items: flex-start;
-      padding: 2em 0 2.15em 0;
-   }
-
-   .tiny-work-grid .grid-sub-title .flex-col:nth-child(1) { display: none;}
-   .tiny-work-grid .grid-sub-title .flex-col:nth-child(2) {width: 35% !important; order: 3;}
-   .tiny-work-grid .grid-sub-title .flex-col:nth-child(3) {width: 52% !important; order: 2; padding-left: calc(var(--container-padding) * 1);}
-   .tiny-work-grid .grid-sub-title .flex-col:nth-child(4) {width: 13% !important; order: 4;}
-
-   .tiny-work-grid .work-items .flex-col:nth-child(1) {width: 100%; padding-bottom: .75em; order: 1;}
-   .tiny-work-grid .work-items .flex-col:nth-child(2) {width: 35%; order: 3; padding-right: 1em;} 
-   .tiny-work-grid .work-items .flex-col:nth-child(3) {width: 52%; order: 2; padding-right: 1em; padding-left: calc(var(--container-padding) * 1);} 
-   .tiny-work-grid .work-items .flex-col:nth-child(4) {width: 13%; order: 4;} 
-
-   .tiny-work-grid .work-items a:hover h4 {
-      transform: translateX(0) rotate(0.001deg);
-   }
-
-   .tiny-work-grid .work-items a:hover p {
-      transform: translateX(0) rotate(0.001deg);
-   }
-
-   .tiny-work-grid .work-items p {
-      font-size: .9em;
-   }
-
-   .tiny-work-grid .stripe {
-      opacity: .75;
-   }
-}
-
-@media screen and (max-width: 450px) {
-
-   .tiny-work-grid .row {
-      align-items: flex-start;
-      padding: 1.9em 0 1.9em 0;
-   }
-
-   .tiny-work-grid .work-items .flex-col:nth-child(1) {
-      padding-bottom: .5em;
-   }
-
-   .tiny-work-grid .work-items h4 {
-      font-size: 1.3em;
-   }
-
-   .tiny-work-grid .work-items p {
-      font-size: .8em;
-   }
-
-   .tiny-work-grid .arrow {
-      transform: translateY(-.2em);
-   }
-}
-
-/* ------------------------- Work Grid - Sub Title Info -------------------------------------------------- */
-
-.work-grid .grid-sub-title {
-   width: 100%;
-   display: flex;
-   padding-bottom: var(--gap-padding);
-}
-
-.work-grid .grid-sub-title h5 {
-   margin: 0;
-   width: 100%;
-}
-
-.work-grid .grid-sub-title .flex-col:nth-child(1) {
-   padding-left: calc(var(--container-padding) * 1);
-   width: 44%;
-   /* padding-left: var(--gap-padding); */
-}
-
-.work-grid .grid-sub-title .flex-col:nth-child(2) {
-   width: 20%;
-}
-
-.work-grid .grid-sub-title .flex-col:nth-child(3) {
-   width: 22%;
-}
-
-.work-grid .grid-sub-title .flex-col:nth-child(4) {
-   width: 14%;
-   padding-right: calc(var(--container-padding) * 1);
-   text-align: right;
-   /* padding-right: var(--gap-padding); */
-}
-
-/* ------------------------- Large Work Grid - Sub Title Info -------------------------------------------------- */
-
-
-.large-work-grid .grid-sub-title .flex-col:nth-child(1) {
-   padding-left: calc(var(--container-padding) * 1);
-   width: 70%;
-}
-
-.large-work-grid .grid-sub-title .flex-col:nth-child(2) {
-   width: 30%;
-   padding-left: var(--gap-padding);
-   padding-right: calc(var(--container-padding) * 1);
-}
-
-
-/* ------------------------- Work Grid - Filter Row -------------------------------------------------- */
-
-.work-filters {
-   margin-top: calc(var(--section-padding) * -.25);
-   padding-top: 0;
-   padding-bottom: calc(var(--section-padding) / 2);
-}
-
-.work-filters .filter-row {
-   width: 100%;
-   padding: 0 var(--container-padding) 0 var(--container-padding);
-   padding: 0 calc(var(--container-padding) * .96) 0 calc(var(--container-padding) * .96);
-   display: flex;
-   justify-content: space-between;
-}
-
-.work-filters .filter-row .toggle-row {
-   display: flex;
-}
-
-.work-filters .filter-row .toggle-row .btn {
-   display: inline-flex;
-   margin-right: .5em;
-}
-
-.work-filters .filter-row .grid-row {
-   display: flex;
-}
-
-.work-filters .filter-row .grid-row .btn {
-   display: inline-flex;
-   margin-left: .5em;
-}
-
-@media screen and (max-width: 1024px) {
-   .work-filters .filter-row .grid-row {
-      display: none;
-   }
-}
-
-@media screen and (max-width: 540px) {
-   .work-filters .filter-row {
-      padding: 0;
-   }
-
-   .work-filters .filter-row .toggle-row .btn .btn-text {
-      margin-right: .15em;
-   }
-}
-
-@media screen and (max-width: 460px) {
-   .work-filters .filter-row .toggle-row .btn {
-      font-size: .89em;
-   }
-}
-
-@media screen and (max-width: 390px) {
-   .work-filters .filter-row .toggle-row .btn {
-      font-size: .83em;
-   }
-}
-
-@media screen and (max-width: 380px) {
-   .work-filters .filter-row .toggle-row .btn {
-      font-size: .8em;
-   }
-}
-
 
 /* ------------------------- Work Grid - After Center Btn -------------------------------------------------- */
 
@@ -1401,6 +1146,21 @@ main.touch .main-wrap {
       width: 100%;
    } */
 
+}
+
+/* ------------------------- Mouse Position Image -------------------------------------------------- */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
 }
 
 
