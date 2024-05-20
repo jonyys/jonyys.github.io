@@ -1,0 +1,61 @@
+.examples{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.example-color{
+    font-weight: bold;
+    color:crimson;
+}
+
+.example-code{
+    width: 80%;
+    height: 50vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.example-data{
+    q {
+        quotes: "«" "»"; /* Establece las comillas para los bloques de cotización */
+        font-style: italic; /* Itálica para resaltar la cotización */
+    }
+    .otherQuotes::before {
+        content: "„";
+    }
+    .otherQuotes::after {
+        content: "“";
+    }
+    .otherQuotes2::before {
+        content: "'";
+    }
+    .otherQuotes2::after {
+        content: "'";
+    }
+    break-before:always;
+}
+
+main {
+    column-width: 200px;
+    column-gap: 50px;
+    padding: 1.5rem;
+  }
+
+article > div{
+    border: 3px dotted #ff7a18;
+    padding: 1rem;
+    page-break-before:initial;
+  }
+
+.paragraph {
+    padding-left: 150px;
+    padding-right: 150px;
+}
