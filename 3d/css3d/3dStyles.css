@@ -1,0 +1,143 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f0f0f0, #cccccc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Contenedor principal para el renderizador y la interfaz de usuario */
+#container {
+    width: 75%;
+    height: auto;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #b7b7b7;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Estilos para la interfaz de usuario donde se encuentran los selectores de color */
+#ui {
+    width: 25%;
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-y: auto;
+    height: 90vh;
+    scrollbar-width: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#ui::-webkit-scrollbar {
+    display: none;
+}
+
+/* Título dentro de la interfaz de usuario */
+#ui h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Estilo para las etiquetas de los colores */
+#ui label {
+    font-weight: bold;
+    margin: 15px 0 10px;
+    font-size: 16px;
+}
+
+/* Estilos para los selectores de color */
+input[type="color"] {
+    width: 35vh;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="color"]:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.back-arrow:hover {
+    background-color: #f0f0f0;
+}
+
+#colorPicker {
+    margin: 10px 0;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#colorPicker:focus {
+    outline: none;
+    border-color: #555;
+}
+
+#applyBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+#applyBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #container, #ui {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    #container {
+        order: 2;
+    }
+
+    #ui {
+        order: 1;
+    }
+}
