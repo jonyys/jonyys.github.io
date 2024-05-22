@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;400&family=Archivo+Black&family=Exo+2:wght@500&family=League+Gothic&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;400&family=Archivo+Black&family=Exo+2:wght@500&family=League+Gothic&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+
+body{
+    font-family: "Arial", sans-serif;
+}
+.info-profile-name-size{
+  text-align: center;
+  color: #333;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.boton{
+    border: 1px solid red;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+  .ventana-emergente {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+
+    width: 80%;
+    height: 80%;
+    font-size: small;
+  }
+
+  .contenidoCajas{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .ventana-emergente .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .ventana-emergente .contenido img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+#img1º{
+  width: 40%;
+  height: 100%;
+  padding-left: 30px;
+}
+#img3º{
+  width: 30%;
+  height: 70%;
+ 
+  padding-left: 30px;
+}
+
+#img4º{
+  width: 400px;
+ 
+  padding-left: 30px;
+}
+#preguntas{
+  font-weight: bolder;
+}
+
+.contenedor-noticias {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+  
+.Noticias {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    padding: 20px;
+    width: 45%;
+}
+
+.contenido {
+    text-align: center;
+    flex-grow: 1;
+    margin-right: 20px;
+    padding-left: 90px;
+    padding-right:90px;
+
+}
+.fechas{
+    font-size: 14px;
+    font-family: "Rajdhani", sans-serif;
+    color: rgb(106, 106, 106);
+}
+.rojo{
+    font-size: 14px;
+    font-family: "Rajdhani", sans-serif;
+    color: red;
+}
+
+.img-entrevis{
+    height:250px;
+    width: 350px;
+
+}
+.imgWerlyb{
+    height:500px;
+    width: 350px;
+
+}

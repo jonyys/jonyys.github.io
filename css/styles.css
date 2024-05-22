@@ -1,0 +1,485 @@
+/* Estilos generales */
+body, header, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del header */
+header {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8d8d8d;
+}
+
+#scrollBtn {
+    display: none;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000000;
+    opacity: 90%;
+    z-index: 10000;
+}
+
+#scrollBtn:hover {
+    background-color: #00000070;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: left 0.8s ease-out;
+    object-fit: cover;
+}
+
+.carousel img.active {
+    left: 0;
+}
+
+.carousel img.exit {
+    left: -10%;
+}
+
+/* Estilos de las secciones */
+.section-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Release Section */
+.release-section {
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.release-section::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #ff9500;
+    margin: 20px auto;
+}
+
+.release-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 250px;
+    margin: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 10px;
+    background: white;
+    display: inline-block;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    color: #333;
+    margin-top: 5px;
+}
+
+.card p {
+    color: #666;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+/* News Section */
+.news-section {
+    padding: 20px 20px 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    position: relative;
+}
+
+.news-section::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news-item {
+    width: 45%;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.news-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+    text-align: center;
+    color: #333;
+    margin-top: 10px;
+}
+
+.news-item p {
+    text-align: left;
+    color: #666;
+    margin-top: 5px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        width: 100%;
+    }
+}
+
+/* Reseñas Section */
+.container2 {
+    background-color: #f4f4f4;
+    text-align: center;
+    position: relative;
+}
+
+.container2::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #ff9500;
+    margin: 20px auto;
+}
+
+.contenedor-resenas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Resena {
+    background: #fff;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    transition: box-shadow 0.3s ease;
+}
+
+.Resena:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contenido {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.review-header h3 {
+    text-align: left;
+    color: #333;
+    margin: 0;
+    font-size: 15px;
+}
+
+.stars {
+    color: gold; 
+    font-size: 1em; 
+}
+
+.review-author {
+    font-weight: bold; 
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.Resena p {
+    text-align: left;
+    color: #666;
+    margin-top: 5px;
+}
+
+.img-resena {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.more-news {
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.more-news:hover {
+    background-color: #ff7700; 
+}
+
+@media (max-width: 768px) {
+    .Resena {
+        width: 100%;
+    }
+}
+
+/* Personalización Section */
+#personalizacion {
+    background-color: #f4f4f4;
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#personalizacion::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #ff9500;
+    margin: 20px auto;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.contenedor-personalizacion {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.personalizacion-item {
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 28%;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.personalizacion-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.personalizacion-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.personalizacion-item h3 {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #929292;
+}
+
+/* Sobre Nosotros Section */
+#sobrenosotros {
+    background-color: #f4f4f4;
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#sobrenosotros::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #ff9500;
+    margin: 20px auto;
+}
+
+.contenedor-sobrenosotros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobrenosotros-img-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.sobrenosotros-img {
+    width: 80%;
+    padding: 20px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sobrenosotros-content {
+    flex: 2;
+    padding: 50px;
+    text-align: left;
+}
+
+.sobrenosotros-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sobrenosotros-content h4 {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sobrenosotros-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Contacto Section */
+#contacto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-text {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    text-align: left;
+}
+
+.form-input {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.form-button {
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.form-button:hover {
+    background-color: #ff7700;
+}

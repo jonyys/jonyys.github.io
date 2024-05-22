@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Zapatillas 3D</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css3d/3dStyles.css">
+</head>
+<body>
+    <a href="../index.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+    <div id="container"></div>
+    <div id="ui">
+        <h2 style="margin-bottom: 10px;">Editor de Zapatillas 3D</h2>
+        <div>
+            Cordones e interior: <input type="color" id="colorPicker16" value="#ffffff"><br>
+            Tela Contrafuerte trasero <input type="color" id="colorPicker17" value="#ffffff"><br>
+            Suela interna: <input type="color" id="colorPicker18" value="#ffffff"><br>
+            Linas interiores: <input type="color" id="colorPicker19" value="#ffffff"><br>
+            Suela: <input type="color" id="colorPicker20" value="#ffffff"><br>
+            Logo nike: <input type="color" id="colorPicker21" value="#ffffff"><br>
+            Lineas exteriores: <input type="color" id="colorPicker22" value="#ffffff"><br>
+            Media suela: <input type="color" id="colorPicker23" value="#ffffff"><br>
+        </div>
+    </div>
+    
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.145.0/build/three.module.js",
+            "OrbitControls": "https://unpkg.com/three@0.145.0/examples/jsm/controls/OrbitControls.js",
+            "GLTFLoader": "https://unpkg.com/three@0.145.0/examples/jsm/loaders/GLTFLoader.js"
+          }
+        }
+    </script>
+    <script type="module" src="./js/720.js"></script>
+</body>
+</html>
